@@ -96,7 +96,17 @@ public class MainActivity extends AppCompatActivity {
         // This comment suppresses the Android Studio warning about simplifying
         // the return statements.
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_order) {
+            startActivity(new Intent(this, OrderActivity.class));
+            return true;
+        } else if (id == R.id.action_contact) {
+        // Code to contact the cafe
+            return true;
+        } else if (id == R.id.action_favorites) {
+        // Code to show favorite desserts
+            return true;
+        } else if (id == R.id.action_status) {
+        // Code to check the status of an order
             return true;
         }
 
